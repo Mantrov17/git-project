@@ -28,3 +28,14 @@ console.log(quantity)
 ## HEAD
 
 HEAD - это служебный файл, который указывает на самый свежий коммит
+
+## Статусы файлов
+
+```mermaid
+  graph TD;
+      untracked--git add-->staged;
+      staged--изменения-->modified;
+      modified--git add-->staged;
+      staged--git commit-->tracked;
+      tracked--изменения-->modified;
+```
